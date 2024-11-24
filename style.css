@@ -98,15 +98,15 @@ body{
     transform: translate(0,-5px);
 }
 
-.links .sw a i{
+.links .ig a i{
     color: white;
     margin: 25px 1px;
     font-size: 33px;
     transition: .3s;
 }
 
-.links .sw a i:hover{
-    color: gold;
+.links .ig a i:hover{
+    color: rgb(255, 220, 128);
     transform: translate(0,-5px);
 }
 .fikilogo{
