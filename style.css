@@ -253,6 +253,9 @@ body{
 }
 
 @media (max-width: 575px) {
+    *{
+        overflow: hidden;
+    }
     .card{
         width: 24rem;
         height: 42rem;
