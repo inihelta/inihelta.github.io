@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="src/output.css" rel="stylesheet">
+    <link rel="icon" href="https://cdn.discordapp.com/avatars/798146387840991252/0325b67a9e54019918fc2d62ea99cb57.webp" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/Observer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js" integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollToPlugin.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.3.4/dist/lenis.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="src/main.js"></script>
+    <title>Project</title>
+</head>
+<body class="select-none overflow-hidden">
+    <div id="loadscreen" class="bg-neutral-950 h-full w-full absolute z-99">
+        <span class="mx-auto whitespace-nowrap cursor-default text-center font-black uppercase text-black select-none absolute left-[50%] translate-x-[-50%]" style="opacity: 0.3; font-size: 30dvw;">
+            <div class="font-extrabold bg-gradient-to-bl from-[#fbe2e3] to-[#dbd7fb] bg-clip-text text-transparent" style="opacity: 1; transform: none;">Helta</div>
+        </span>
+    </div>
+    <div class="absolute -z-99 h-full w-full bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)]"></div>
+    <div class="bg-[#fbe2e3] absolute top-[-7rem] -z-40 right-[1rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem]" style="opacity: 1; transform: none;"></div>
+    <div class="bg-[#dbd7fb] absolute top-[5rem] -z-40 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem]" style="opacity: 1; transform: none;"></div>
+    <span class="mx-auto whitespace-nowrap cursor-default text-center font-black uppercase text-black select-none absolute max-md:top-[45%] top-[50%] left-[50%] translate-[-50%] text-[30dvw] " style="opacity: 0.03;"><div style="opacity: 1;">HELTA</div></span>
+    <div class="scrolling-text">
+        <div class="rail">
+            <span>FRONTEND DEVELOPER - MINECRAFT SERVER DEVELOPER - COOL PERSON -</span>
+            <span>FRONTEND DEVELOPER - MINECRAFT SERVER DEVELOPER - COOL PERSON -</span>
+        </div>
+    </div>
+    <!-- From Uiverse.io by vinodjangid07 --> 
+    <a class="button scroll-down absolute top-[-10rem] max-md:top-[-20rem] left-[50%] translate-x-[-50%]">
+        <i class="fa-solid fa-arrow-down svgIcon"></i>
+    </a>
+
+    <span class="absolute id" style="opacity: 0.03; font-size: 15rem; right: 15%; top: 100vh;"><i class="fa-solid fa-user-large"></i></span>
+    <section class="flex justify-center h-[140dvh]" style="padding-top: 15rem;" id="about">
+        <p class="reveal-type text-2xl md:text-3xl lg:p-4 lg:text-4xl xl:text-5xl 3xl:text-6xl text-center max-w-[70%] font-rht">Yo Helta here. a "normal" person in this beautiful world. I dont have any hobbies, but I like to learn new skills</p>
+    </section>
+    <section>
+        <div id="marque" class="group relative flex overflow-hidden">
+            <div class="absolute left-0 w-1/12 h-full bg-gradient-to-r from-background to-transparent z-10"></div>
+            <div class="flex shrink-0 animate-marque justify-around gap-10">
+                <div class="relative w-50 h-50"><img alt="1's image" loading="lazy" decoding="async" data-nimg="fill" class="grayscale hover:grayscale-0 transition-all duration-500" src="src/assets/GitHub.png" style="position: absolute; height: 100%; width: 100%; inset: 0px; object-fit: contain; color: transparent;"></div>
+                <div class="relative w-50 h-50"><img alt="2's image" loading="lazy" decoding="async" data-nimg="fill" class="grayscale hover:grayscale-0 transition-all duration-500" src="src/assets/HTML.png" style="position: absolute; height: 100%; width: 100%; inset: 0px; object-fit: contain; color: transparent;"></div>
+                <div class="relative w-50 h-50"><img alt="3's image" loading="lazy" decoding="async" data-nimg="fill" class="grayscale hover:grayscale-0 transition-all duration-500" src="src/assets/Node.js.png" style="position: absolute; height: 100%; width: 100%; inset: 0px; object-fit: contain; color: transparent;"></div>
+                <div class="relative w-50 h-50"><img alt="4's image" loading="lazy" decoding="async" data-nimg="fill" class="grayscale hover:grayscale-0 transition-all duration-500" src="src/assets/Python.png" style="position: absolute; height: 100%; width: 100%; inset: 0px; object-fit: contain; color: transparent;"></div>
+                <div class="relative w-50 h-50"><img alt="5's image" loading="lazy" decoding="async" data-nimg="fill" class="grayscale hover:grayscale-0 transition-all duration-500" src="src/assets/Tailwindcss.png" style="position: absolute; height: 100%; width: 100%; inset: 0px; object-fit: contain; color: transparent;"></div>
+                <div class="relative w-50 h-50"><img alt="6's image" loading="lazy" decoding="async" data-nimg="fill" class="grayscale hover:grayscale-0 transition-all duration-500" src="src/assets/PaperMCLogo.png" style="position: absolute; height: 100%; width: 100%; inset: 0px; object-fit: contain; color: transparent;"></div>
+                <div class="relative w-50 h-50"><img alt="7's image" loading="lazy" decoding="async" data-nimg="fill" class="grayscale hover:grayscale-0 transition-all duration-500" src="src/assets/Cloudflare.png" style="position: absolute; height: 100%; width: 100%; inset: 0px; object-fit: contain; color: transparent;"></div>
+                <div class="relative w-50 h-50"><img alt="8's image" loading="lazy" decoding="async" data-nimg="fill" class="grayscale hover:grayscale-0 transition-all duration-500" src="src/assets/DockerLogo.png" style="position: absolute; height: 100%; width: 100%; inset: 0px; object-fit: contain; color: transparent;"></div>
+                <div class="relative w-50 h-50 ml-10"><img alt="9's image" loading="lazy" decoding="async" data-nimg="fill" class="grayscale hover:grayscale-0 transition-all duration-500" src="src/assets/VisualStudioCode.png" style="position: absolute; height: 100%; width: 100%; inset: 0px; object-fit: contain; color: transparent;"></div>
+            </div>
+            <div class="flex shrink-0 animate-marque justify-around gap-10">
+                <div class="relative w-50 h-50"><img alt="1's image" loading="lazy" decoding="async" data-nimg="fill" class="grayscale hover:grayscale-0 transition-all duration-500" src="src/assets/GitHub.png" style="position: absolute; height: 100%; width: 100%; inset: 0px; object-fit: contain; color: transparent;"></div>
+                <div class="relative w-50 h-50"><img alt="2's image" loading="lazy" decoding="async" data-nimg="fill" class="grayscale hover:grayscale-0 transition-all duration-500" src="src/assets/HTML.png" style="position: absolute; height: 100%; width: 100%; inset: 0px; object-fit: contain; color: transparent;"></div>
+                <div class="relative w-50 h-50"><img alt="3's image" loading="lazy" decoding="async" data-nimg="fill" class="grayscale hover:grayscale-0 transition-all duration-500" src="src/assets/Node.js.png" style="position: absolute; height: 100%; width: 100%; inset: 0px; object-fit: contain; color: transparent;"></div>
+                <div class="relative w-50 h-50"><img alt="4's image" loading="lazy" decoding="async" data-nimg="fill" class="grayscale hover:grayscale-0 transition-all duration-500" src="src/assets/Python.png" style="position: absolute; height: 100%; width: 100%; inset: 0px; object-fit: contain; color: transparent;"></div>
+                <div class="relative w-50 h-50"><img alt="5's image" loading="lazy" decoding="async" data-nimg="fill" class="grayscale hover:grayscale-0 transition-all duration-500" src="src/assets/Tailwindcss.png" style="position: absolute; height: 100%; width: 100%; inset: 0px; object-fit: contain; color: transparent;"></div>
+                <div class="relative w-50 h-50"><img alt="6's image" loading="lazy" decoding="async" data-nimg="fill" class="grayscale hover:grayscale-0 transition-all duration-500" src="src/assets/PaperMCLogo.png" style="position: absolute; height: 100%; width: 100%; inset: 0px; object-fit: contain; color: transparent;"></div>
+                <div class="relative w-50 h-50"><img alt="7's image" loading="lazy" decoding="async" data-nimg="fill" class="grayscale hover:grayscale-0 transition-all duration-500" src="src/assets/Cloudflare.png" style="position: absolute; height: 100%; width: 100%; inset: 0px; object-fit: contain; color: transparent;"></div>
+                <div class="relative w-50 h-50"><img alt="8's image" loading="lazy" decoding="async" data-nimg="fill" class="grayscale hover:grayscale-0 transition-all duration-500" src="src/assets/DockerLogo.png" style="position: absolute; height: 100%; width: 100%; inset: 0px; object-fit: contain; color: transparent;"></div>
+                <div class="relative w-50 h-50"><img alt="9's image" loading="lazy" decoding="async" data-nimg="fill" class="grayscale hover:grayscale-0 transition-all duration-500" src="src/assets/VisualStudioCode.png" style="position: absolute; height: 100%; width: 100%; inset: 0px; object-fit: contain; color: transparent;"></div>
+            </div>
+            <div class="absolute right-0 w-1/12 h-full bg-gradient-to-l from-background to-transparent z-10"></div>
+        </div>
+    </section>
+    <section class="flex justify-center">
+        <div class="absolute h-full w-full bg-white max-md:h-[60dvh]"><div class="absolute h-full max-md:h-[60dvh] w-full bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)]"></div></div>
+        <span class="mx-auto whitespace-nowrap cursor-default text-center font-black uppercase text-black select-none absolute left-[50%] translate-x-[-50%]" style="opacity: 0.3; font-size: 30dvw;">
+            <div class="font-extrabold bg-gradient-to-bl from-[#fbe2e3] to-[#dbd7fb] bg-clip-text text-transparent" style="opacity: 1; transform: none;">LINKS</div>
+        </span>
+        <div class="absolute w-full h-full max-md:h-fit flex justify-center items-center par-con gap-10">
+            <a href="https://discord.com/users/798146387840991252" target="_blank"><i class="fa-brands fa-discord max-md:text-6xl max-md:text-[#7289da] text-[9rem] hover:text-[10rem] hover:text-[#7289da] duration-250 par mr-5"></i></a>
+            <a href="https://github.com/inihelta" target="_blank"><i class="fa-brands fa-github max-md:text-6xl max-md:text-[#2b3137] text-[9rem] hover:text-[10rem] hover:text-[#2b3137] duration-250 par mr-5"></i></a>
+            <a href="https://open.spotify.com/user/31lafwagn7r2cf3yvmvphiorhdqm?si=0d54f9489e684b67" target="_blank"><i class="fa-brands fa-spotify max-md:text-6xl max-md:text-[#1db954] text-[9rem] hover:text-[10rem] hover:text-[#1db954] duration-250 par mr-5"></i></a>
+        </div>
+    </section>
+
+    <div class="fixed top-8 right-10 z-99"><span id="time" class="text-black text-lg font-light font-rht"></span></div>
+    <div class="fixed top-7 left-10 z-99"><span class="text-black text-3xl font-extrabold font-rht rht">H</span></div>
+</body>
+</html>

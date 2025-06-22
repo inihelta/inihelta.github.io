@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --animate-marque: marque 20s linear infinite;
+    --animate-gradienttext: animatedgradient 0.1s ease infinite alternate;
+
+    --color-background: white;
+    --font-rht: "Red Hat Text", sans-serif
+}
+@keyframes marque {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.scrolling-text {
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  display: flex;
+
+}
+.scrolling-text .rail {
+  display: flex;
+}
+.scrolling-text div span {
+  white-space: nowrap;
+  font-size: 100px;
+  font-weight: 900;
+  letter-spacing: ls(120);
+  line-height: 1em;
+  margin: 0 30px 0 0;
+}
+
+::-webkit-scrollbar{
+    width: 0;
+}
+
+
+
+/* From Uiverse.io by vinodjangid07 */ 
+.button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(20, 20, 20);
+  border: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 0px 4px rgba(180, 160, 255, 0.253);
+  cursor: pointer;
+  transition-duration: 0.3s;
+  overflow: hidden;
+  position: relative;
+}
+
+.svgIcon {
+  width: 12px;
+  transition-duration: 0.3s;
+}
+
+.svgIcon path {
+  fill: white;
+}
+
+.button:hover {
+  width: 140px;
+  border-radius: 50px;
+  transition-duration: 0.3s;
+  background-color: rgb(181, 160, 255);
+  align-items: center;
+}
+
+.button:hover .svgIcon {
+  /* width: 20px; */
+  transition-duration: 0.3s;
+  transform: translateY(200%);
+}
+
+.button::before {
+  position: absolute;
+  bottom: -20px;
+  content: "scroll down";
+  color: white;
+  /* transition-duration: .3s; */
+  font-size: 0px;
+}
+
+.button:hover::before {
+  font-size: 18px;
+  opacity: 1;
+  bottom: unset;
+  /* transform: translateY(-30px); */
+  transition-duration: 0.3s;
+}
+
+.par{
+  transition-property: margin-inline, font-size, color, opacity;
+  opacity: 0.3;
+}
+.par:hover{
+  margin-inline: 1rem;
+  opacity: 0.8;
+}
+
+.rht{
+  transition-property: opacity;
+  transition-duration: 0.2s;
+  opacity: 0.5;
+}
+.rht:hover{
+  opacity: 0.8;
+}
+
+.par-con{
+    @media (width < 48rem) {
+      margin-top: 9rem;
+    }
+}
+
+#laodscreen{
+  transition-property: display;
+}
